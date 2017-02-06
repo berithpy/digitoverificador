@@ -4,3 +4,4 @@ def digito_verificador(ruc,base_max=11)
                 result += int(ruc[ruc_index])*(index+2)
                 r = result % base_max
         verificador= baseMax - r if r > 1 else 0
+        return verificador
