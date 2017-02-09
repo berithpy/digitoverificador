@@ -1,4 +1,4 @@
-def digito_verificador(ruc,base_max=11)
+def digito_verificador(ruc,base_max=11):
         result = 0
         for index,ruc_index in enumerate(range(len(ruc)-1,-1,-1)):
                 result += int(ruc[ruc_index])*(index+2)
