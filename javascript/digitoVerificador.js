@@ -1,8 +1,8 @@
 digitoVerificador = function (ruc, baseMax = 11) {
     ruc = typeof ruc === 'string' ? ruc : ruc.toString()
     var resultado = 0
+    var index = 0;
     for (var rucIndex = ruc.length - 1; rucIndex >= 0; rucIndex--) {
-        var index = 1;
         resultado += parseInt(ruc[rucIndex]) * (index + 2);
         var r = resultado % baseMax
         index++;
